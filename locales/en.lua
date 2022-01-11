@@ -7,6 +7,7 @@ local Translations = {
         no_stand_found = 'Your hot dog stand was nowhere to be seen, You will not receive your deposit back!',
         no_more = 'You have no %{value} more about this in front of council',
         deposit_notreturned = 'You did not have a Hot Dog Stand',
+        stopped_work = 'You stopped selling hotdogs',
     },
     success = {
         deposit = 'You paid a $250 deposit!',
@@ -14,6 +15,7 @@ local Translations = {
         sold_hotdogs = '%{value} x Hotdog(\'s) sold for $%{value2}',
         made_hotdog = 'You made a %{value} Hot Dogs',
         made_luck_hotdog = 'You made %{value} x %{value2} Hot Dogs',
+        started_work = 'You started selling hotdogs'
     },
     info = {
         command = "Delete Stand (Admin Only)",
