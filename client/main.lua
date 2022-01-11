@@ -285,6 +285,7 @@ RegisterNetEvent('qb-hotdogjob:client:ToggleSell', function(data)
     if not SellingData.Enabled then
         SellingData.Enabled = true
         ToggleSell()
+	QBCore.Functions.Notify(Lang:t("success.started_work"), 'success')
     else
         if SellingData.Target ~= nil then
             SetPedKeepTask(SellingData.Target, false)
@@ -294,6 +295,7 @@ RegisterNetEvent('qb-hotdogjob:client:ToggleSell', function(data)
         SellingData.Enabled = false
         SellingData.Target = nil
         SellingData.HasTarget = false
+	QBCore.Functions.Notify(Lang:t("error.stopped_work"), 'error')
     end
 end)
 
